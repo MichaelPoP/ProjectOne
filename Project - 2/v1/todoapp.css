@@ -1,0 +1,74 @@
+
+/************added**********/
+.completed {
+	text-decoration: line-through;
+}
+
+
+/***********STATIC**********/
+body {
+	background-image: url("../images/grassopen.png");
+}
+h1 {
+	font-weight: bolder;
+	font-variant: small-caps;
+	font-family: fantasy;
+	letter-spacing: 4px;
+	color: #6d6b68;
+	text-shadow:-7px 0px 9px #805eda, 0px -7px 9px #7ccd5d, 0px 7px 9px #d6504c, 7px 0px 9px #be69d6;
+    
+}
+form {
+
+
+}
+input {
+	border: 5px dotted #633bd3;
+	border-style: groove;
+	height: 46px;
+	width:156px;
+	background: rgba(33, 233, 133, .7);
+	color:white;
+	font-size: 22px;
+	font-variant: small-caps; 
+	font-family: fantasy;
+	text-shadow: -1px -1px 9px white, 1px 1px 9px white;
+
+}
+li {
+	border: 3px inset #33c04a;
+	color:white;
+	font-size: 33px;
+	font-variant: small-caps; 
+	font-family: fantasy;
+	text-align: center;
+	text-shadow: -2px -2px 2px black, 2px 2px 2px white;
+	
+	
+}
+#submit {
+	height: 59px;
+	width:105px;
+	background: #262ace;
+}
+.remove {
+	float:right;
+	height: 50px;
+	width: 50px;
+	background: transparent;
+	color:#dc7c74;
+	font-size:30px;
+}
+.check {
+	float: left;
+}
+
+
+
+/*text-shadow: 10px 10px 6px black, -5px -5px 6px black;*/
+
+
+
+
+
+
