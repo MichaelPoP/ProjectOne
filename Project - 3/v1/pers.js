@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+
+	// GUARDIAN NEWS API REQUEST
 $.getJSON("http://content.guardianapis.com/us?show-most-viewed=true&api-key=ckx2b7259waj8zcbbqdmxw9e", function (data) {
 		
 			console.log(data);
@@ -16,7 +19,26 @@ $.getJSON("http://content.guardianapis.com/us?show-most-viewed=true&api-key=ckx2
             
                 
 	    });
-});
+
+
+// BUREAU OF ECONOMIC ANALYSIS API REQUEST
+
+
+
+
+
+
+
+
+
+
+
+
+
+});  //DOCUMENT READY CLOSE
+
+
+
 
 $("ol").on("click", ".remove", function () {
     $(this).fadeOut(300, function () {
@@ -24,11 +46,16 @@ $("ol").on("click", ".remove", function () {
 	});
 });
 
-$("img").on("mouseover", function() {
+
+
+
+
+
+$(".portrait").on("mouseover", function() {
 		        $(this).addClass("animated infinite pulse");
 		       
 });
-$("img").on("mouseout", function() {
+$(".portrait").on("mouseout", function() {
 		        $(this).removeClass("animated infinite pulse");
 		       
 });
@@ -89,20 +116,33 @@ setTimeout(function () {quote2.className += " hid"}, 11000);
 
 setTimeout(function () {quote3.className += " vis"}, 12000);
 
-setTimeout(function () {quote3.className += " hid"}, 15000);
-                 
+setTimeout(function () {
+	quote3.className += " hid";
+	doitagain();
+}, 15000);        
 
 };
  
     doitagain();
    
  
+// CAN I DO THIS WITH JQUERY???
+
+
+// $(document).ready(function(){
+  
+// // var pops = $("<h3>'If Knowledge is Power and Ignorance is Bliss, Then Why Arent We Happy Being Powerless?'</h3>").fadeIn(300);
+
+// // $('p').append(pops);
 
 
 
 
+// $('p').append("<h3>'If Knowledge is Power and Ignorance is Bliss, Then Why Arent We Happy Being Powerless?'</h3>").fadeIn(3000);
 
 
+
+// });
 
 
 

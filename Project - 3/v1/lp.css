@@ -1,9 +1,7 @@
 body {
 	/*background: url("../images/desert.jpg") no-repeat center center fixed;*/
 	/*background-size: cover;*/
-
-
-
+     background: rgba(26, 50, 54, .6) !important;
 }
 #navstyle {
 	background: transparent;
