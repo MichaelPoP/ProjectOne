@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 // BUREAU OF ECONOMIC ANALYSIS API REQUEST
 
-$(document).ready(function(){
+
     $("form").on("submit", function(event) {
 	        event.preventDefault();
 	        var year = this.name.value;
@@ -167,36 +167,36 @@ var doitagain = function  ()  {
 
 setTimeout(function () {
 	quote.addClass("vis");
-}, 3000);
+}, 1000);
 
 setTimeout(function () {
 	quote.removeClass("vis");
-}, 5000);
-
-setTimeout(function () {
-	quote1.addClass("vis");
 }, 6000);
 
 setTimeout(function () {
+	quote1.addClass("vis");
+}, 7500);
+
+setTimeout(function () {
 	quote1.removeClass("vis");
-}, 8000);
+}, 12500);
 
 setTimeout(function () {
 	quote2.addClass("vis");
-}, 9000);
+}, 14000);
 
 setTimeout(function () {
 	quote2.removeClass("vis");
-}, 11000);
+}, 19000);
 
 setTimeout(function () {
 	quote3.addClass("vis");
-}, 12000);
+}, 20500);
 
 setTimeout(function () {
 	quote3.removeClass("vis");
 	doitagain();
-}, 15000);        
+}, 25500);        
 
 };
  

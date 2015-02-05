@@ -2,6 +2,14 @@
 
 
 
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
+
+
+
+
+
 // **************************** FOR OUTLINE EFFECT ***********************
 // function changePanelBorder (event) {
 // 	console.log(event);

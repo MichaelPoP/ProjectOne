@@ -75,11 +75,11 @@ h2 {
 
 #q1.vis, #q2.vis, #q3.vis, #q4.vis {
 	visibility: visible;
-	margin: 20px;
+	margin: 15px;
 	text-shadow: 1px 1px 5px white;
 	
 	color: #2f3441 !important;
-	font-size: 22px;
+	font-size: 20px;
 
 }
 
