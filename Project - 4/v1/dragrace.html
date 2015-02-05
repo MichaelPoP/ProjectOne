@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TRAGGER</title>
+  <style>
+  /*********  FOR ALL ************/
+
+.position {
+    margin: 0 auto;
+}
+
+.pops {
+  position: absolute;
+}
+body {
+  background-image: url("../images/tronBack.jpg");
+}
+#engine {
+color: transparent;
+display: inline-block;
+
+}
+#engine.on {
+  border-radius: 30px;
+  background: rgba(24, 184, 61, .7);
+  width: 70px;
+  height: 20px;
+  color: white;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 15px;
+  line-height: 25px;
+  box-shadow: 2px 2px 12px 2px #18B83D, -2px -2px 12px 2px #18B83D;
+  display: inline-block;
+}
+p {
+  font-family: monospace;
+  color: white;
+  font-variant: small-caps;
+}
+
+
+/*********  LIGHTS/ XMAS TREE ************/
+/** transform-test: (deg 90); to turn text sideways ******/
+/**look for svg images  ****/
+
+#xtree {
+  margin: 15px auto;
+  width: 220px;
+  background:rgba(2, 15, 33, .7);
+  color: white;
+  text-align: center;
+  font-size: 2.2em;
+  border: 12px double rgba(19, 26, 33, .7);
+  border-style: groove;
+}
+.plights {
+  border-bottom: 7px solid #0E453C;
+  border-top: 7px double #0C353F;
+}
+.lights {
+  border-bottom: 7px solid #0E453C;
+  border-top: 7px double #0C353F;
+}
+.plights div, .lights div  {
+  display: inline-block;
+  background: rgba(19, 26, 33, .9);
+}
+/**** OFF STATE ******/
+#preLights div  {
+  width: 25px;
+  height: 22px;
+  border-radius: 9px;
+  background: rgba(10, 15, 17);
+  border: 2px solid black;
+  border-style: groove;
+  color: black;
+  font-size: 33px;
+  vertical-align: middle;
+  line-height: 27px;
+  letter-spacing: -0.9px;
+  background: #FF001E;
+  box-shadow: 2px 2px 12px 3px #FF001E, -2px -2px 12px 3px #FF001E;
+  }
+span {
+  text-shadow: 0 0 3px #9EB0CE, 0 0 5px #E3EAE6;
+  font-variant: small-caps;
+}
+#stageLights div {
+  width: 25px;
+  height: 22px;
+  border-radius: 9px;
+  border: 2px solid black;
+  font-size: 33px;
+  color: black;
+  font-weight: lighter;
+  vertical-align: middle;
+  line-height: 27px;
+  letter-spacing: -0.9px;
+  background: #07211D;
+}
+#startLights div, #startLights1 div, #startLights2 div, #startLights3 div, #startLights4 div {
+  width: 42px;
+  height: 27px;
+  vertical-align: middle;
+  background: rgba(19, 26, 33, .9);
+  border-radius: 25px;
+  border:2px dotted rgba(13, 66, 66, .9);
+  border-style: inset;
+  margin-bottom: 7px;
+  
+}
+/*********   ON STATE   **********/
+#preLights.on div {
+  background: #FF001E;
+  font-size: 36px;
+  font-weight: lighter;
+  vertical-align: middle;
+  line-height: 27px;
+  letter-spacing: -0.9px;
+  box-shadow: 2px 2px 12px 3px #FF001E, -2px -2px 12px 3px #FF001E;
+
+}
+
+#stageLights.on div {
+  width: 25px;
+  height: 22px;
+  border-radius: 9px;
+  border: 2px solid black;
+  text-shadow: 0 0 3px #9EB0CE, 0 0 5px #E3EAE6;
+  font-size: 33px;
+  color: black;
+  font-weight: lighter;
+  vertical-align: middle;
+  line-height: 27px;
+  letter-spacing: -0.9px;
+  box-shadow: 2px 2px 12px 3px #BADA55, -2px -2px 12px 3px #BADA55;
+  background: #FFFF00;
+
+}
+
+#startLights.on div, #startLights1.on div, #startLights2.on div, #startLights3.on div, #startLights4.on div{
+   background: #05F721;
+   box-shadow: 2px 2px 12px 3px #05F721, -2px -2px 12px 3px #05F721;
+}
+ 
+/*************  RACETRACK  ***************/
+
+.go {
+  height: 170px;
+  width: 10px;
+  min-height: 170px;
+  min-width: 10px;
+}
+
+#track {
+  background: rgba(19, 26, 33, .9);
+  width: 90%;
+  height: 170px;
+  border: 6px double rgba(39, 104, 94, .5);
+  border-style: inset;
+  max-width: 800px;
+  min-width: 770px;
+}
+.position:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 110px;
+    border-top: 50px double transparent;
+    border-bottom: 80px double rgba(161, 201, 195, .5);
+    border-left: 50px double transparent;
+    border-right: 50px double rgba(161, 201, 195, .5);
+    position: absolute;
+    bottom: -18px;
+    left: 99px;
+    box-shadow: 6px 6px 6px 1px #FFFFFF;
+}
+.position:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 110px;
+    border-top: 50px double transparent;
+    border-bottom: 80px double rgba(161, 201, 195, .5);
+    border-left: 50px double rgba(161, 201, 195, .5);
+    border-right: 50px double transparent;
+    position: absolute;
+    bottom: -18px;
+    right:99px;
+    box-shadow: -6px 6px 6px 1px #FFFFFF;
+}
+
+#strip {
+
+  width: inherit;
+  height: 188px;
+}
+
+#racecar{
+  left: -10px;
+  background: url(../images/tronDrag.png) no-repeat;
+  background-size: 88px 64px;
+  width: 88px;
+  height: 67px;
+  top: 20px;
+  z-index: 100;
+}
+
+
+#preStage {
+  left: 70px;
+  background: #FFFFFF;
+}
+
+#staged {
+  left: 140px;
+  background: #FFFFFF;
+}
+
+#start {
+
+}
+#container {
+  position:center;
+  background: black;
+  height: 700px;
+  width: 820px;
+  border:1px solid black;
+}
+#finish {
+  float: right;
+  width:40px;
+  right: -720px;
+  background: #FFFFFF;
+}
+  </style>
+</head>
+
+
+<body>
+<p> Instructions: SPACE = Turn on Engine: RIGHT + LEFT ARROW = GO! </p>  
+  <div id="xtree" class="center">
+      <span>pre-stage</span>
+      <div id="preLights" class="plights">
+        <div>||||</div><div>||||</div><div>||||</div>
+        <div>||||</div><div>||||</div><div>||||</div>
+      </div>
+      <span>stage</span>
+      <div id="stageLights" class="lights">
+        <div>||||</div><div>||||</div><div>||||</div>
+        <div>||||</div><div>||||</div><div>||||</div>
+      </div>
+      <div id="startLights" class="lights">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="startLights1" class="lights">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="startLights2" class="lights">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="startLights3" class="lights">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="startLights4" class="lights">
+        <div></div>
+        <div></div>
+      </div>
+  </div>
+<div id="engine">engine on</div>
+  <div id="track" class="position">
+    <div id="lane" class="pops">
+
+        <div id="racecar" class="pops"></div>
+        <div id="preStage" class="go pops"></div>
+        <div id="staged" class="go pops"></div>
+        <div id="start" class="pops"></div>
+        <div id="finish" class="go pops"></div>
+      
+      </div>
+  </div>
+</div>  
+
+<script type="text/javascript">
+
+
+window.addEventListener('keyup', function(event) {
+
+  if (event.keyCode === 32) {
+    
+     var racecarDiv = document.getElementById('racecar');
+     var stageLightsDiv = document.getElementById('stageLights');
+     var startLightsDiv = document.getElementById('startLights');
+     var startLightsDiv1 = document.getElementById('startLights1');
+     var startLightsDiv2 = document.getElementById('startLights2');
+     var startLightsDiv3 = document.getElementById('startLights3');
+     var startLightsDiv4 = document.getElementById('startLights4');
+     var engineon = document.getElementById('engine');
+
+     racecarDiv.style.left = "-10px";
+     setTimeout(function () {stageLightsDiv.className += " on"}, 5000);
+     setTimeout(function () {startLightsDiv.className += " on"}, 7000);
+     setTimeout(function () {startLightsDiv1.className += " on"}, 8500);
+     setTimeout(function () {startLightsDiv2.className += " on"}, 9500);
+     setTimeout(function () {startLightsDiv3.className += " on"}, 10000);
+     setTimeout(function () {startLightsDiv4.className += " on"}, 10500);
+     engineon.className += " on";
+
+
+      window.addEventListener('keyup', function(event) {
+        if (event.keyCode === 39 || event.keyCode === 37) {
+          //.style gives all the styles associated with racecarDiv in particular .left
+
+        racecarDiv.style.left = parseInt(racecarDiv.style.left, 10) + 3 + "px";
+           //console.log(racecarDiv.style.left);
+
+         }
+
+         //var backgroundgeton = document.getElementById('startLights4');
+       
+
+         if ((counter === 27) && (startLightsDiv4.className == "lights")) {
+          track.style.background = "red";
+          alert("FALSE START");
+          setTimeout(function () {location.reload();}, 2000);
+         }
+         if (counter === 217) {
+        alert("Race Over");
+        racecarDiv.style.left = "-10px";
+        location.reload();
+        
+         }  
+
+      });
+   }
+});
+var counter = 0;
+var t0 = performance.now(); 
+   alert("Race Over");
+var t1 = performance.now();
+console.log("Race took " + (t1 - t0) + " milliseconds."); 
+
+
+window.addEventListener('keyup', function(event) {
+      if (event.keyCode === 39 || event.keyCode === 37) {
+        counter = counter + 1;
+        console.log(counter);
+      }
+   });
+//*********************************** TIME COUNTER ******************************************
+// var counter = 0;
+// var t0 = performance.now(); 
+// function timer () {
+// if (counter === 217) {
+//   alert("Race Over");
+// } 
+// }    
+// var t1 = performance.now();
+// console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.");
+  
+</script>
+</body>
+</html>

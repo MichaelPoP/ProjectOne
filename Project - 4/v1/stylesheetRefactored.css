@@ -1,0 +1,154 @@
+.topright {
+    padding:0px 0px 0px 0px;
+    margin: 0px 0px -130px 0px;
+    position: relative;
+    left: 800px;
+    top: 0px;
+    
+   }
+   .caption {
+     position: relative;
+     margin: 10px 50px 0px 0px;
+     width: 200;
+     top: -220;
+     border: double;
+   }
+   .bottomleft {
+     padding: 20px;
+     position:fixed;
+     left: 0px;
+     bottom: 0px;
+     border:
+     
+   }
+   .stitch { 
+    padding: 0px 0px 30px 0px;
+    margin: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #fff;
+    border-radius: 10px; 
+    box-shadow: 0 0 0 4px #333, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    text-shadow: -1px -1px #fff;
+    font-weight: normal; 
+  }
+head {
+  text-align: center;
+}
+h1 {
+  display: inline;
+  font-size: 59px;
+  vertical-align: middle;
+  line-height: 200px;
+}
+h2 {
+  color: rgba(0, 180, 250, .7);
+}
+body { 
+  text-align: center;
+  background: url("http://i.imgur.com/XeSiQBp.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: arial;
+}
+p { 
+  font-size:23px;
+  margin: 0 auto;
+  text-shadow: -1px 0 4px blue, 0 1px 4px blue, 1px 0 3px black, 0 -1px 3px black;
+}
+BL {
+  font-size:30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #936;
+  margin: 0px;
+  border: double;
+}
+.sub {
+  font-size:18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: blue;
+  position: relative;
+  left: -420;
+  top: -230;
+  width: 200;
+  max-width: 200;
+}
+article {
+  max-width: 500px;
+  padding: 30px;
+  margin: 0 0 -35;
+}
+@media (max-width: 500px) {
+  body {
+    background: gray;
+    margin: 0px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  li {
+    display: block;
+    padding: 5px;
+    
+  }
+}
+  
+input {
+  border:1;
+  padding:8px;
+  font-size:15px;
+}
+input[type="submit"] {
+  background: blue;
+  color: white;
+}
+
+img { 
+  margin: 22px 0px 45px 0px;
+  padding: 4;
+  border: 6px inset rgba(56, 210, 222, 0.5);
+  border-radius: 100px 0px 100px 0px;
+  position: center;
+  box-shadow: 2px 2px 12px 3px #5d4da3, -2px -2px 12px 3px #5d4da3;
+}
+
+c {
+  font-size: 22px;
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+b {
+  font-size: 44px;
+  color: white;
+  text-shadow: -13px 0 3px white, 0 22px 4px white, 13px 0 4px white, 0 -22px  3px white;
+
+}
+a {
+  color: rgba(240, 90, 233, 0.9);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+}
+ul {
+  margin: 26px;
+  padding: 33px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  display: inline;
+  padding: 10px 20px 10px 20px;
+  border: outset;
+  border-radius: 100px 0px 100px 0px;
+}
+
+button {
+  height:174;
+  width: 230;
+  border: solid;
+  border-radius: 100 100 100 0;
+  background: rgba(200,125,175,.5);
+}

@@ -1,0 +1,86 @@
+body {
+	background: url("../images/desertsand.jpg") no-repeat center center fixed;
+	background-size: cover;
+     background: rgba(31, 31, 5, .6) !important;
+}
+#navstyle {
+	background: transparent;
+	background-color: transparent;
+	border-color: transparent;
+	text-shadow: 0 0 5px #FFF, 0 0 5px #FFF;
+	font-variant: small-caps;
+	letter-spacing: 3px;
+	color: white;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bolder;
+	font-family: 'Fredericka the Great', cursive;
+}
+.fcolor {
+	color:  #2c73b0 !important;
+	text-shadow: 2px 2px 3px #21c2c1, 3px 3px 7px #FFF !important;
+}
+.homeborder {
+	border:4px outset #8b98ab;
+	width:90px;
+	margin-left: 20px;
+	margin-top:5px;
+	
+}
+
+.push {/*THIS IS SO THINGS DONT END UP HIDDEN UNDER NAV*/
+	margin-top: 70px;
+}
+ @media screen and (max-width: 770px) { /*AND THIS IS TO STOP IT HAPPENING WHEN SCREEN IS SMALL*/
+ 	.push {
+ 		margin-top: 250px;
+ 	}
+ }
+.pic {
+	background: url("../images/galaxy.jpg") no-repeat center center fixed;
+	background-size: cover;
+	border-radius: 10px 10px 10px 10px;
+	border:10px inset rgba(33, 133, 220, .5);
+	height: auto;
+}
+.title {
+	margin-bottom: 20%;
+	margin-top:20%;
+	text-shadow: 0 0 10px #cfc265, 0 0 10px #FFF;
+	color:white;
+	font-family: 'Fredericka the Great', cursive;
+	letter-spacing: 6px;
+	font-size: 80px;
+	font-variant: small-caps;
+}
+.name {
+	font-size: 70px;
+}
+
+.social-media {
+	margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+.animated hinge {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
