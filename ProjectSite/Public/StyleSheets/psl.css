@@ -48,7 +48,7 @@
 .personal {
 	height:530px;
 	border-radius: 10px;
-	background: url("../images/temple.jpg") no-repeat center center fixed;
+	background: url("../Images/temple.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 .ppos1 {
@@ -92,7 +92,7 @@ h2 {
  /***********************   INTERESTS ROW ************************/
            /*********** NEWS API  ***********/
 .guardian {
-	height: 650px;
+	height: 800px;
 	background: #2c73b0;
 }
 
