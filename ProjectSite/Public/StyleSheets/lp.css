@@ -39,7 +39,7 @@ body {
 .pic {
 	background: transparent;
 	
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 18px;
 	border:10px inset rgba(33, 133, 220, .5);
 	height: auto;
 	box-shadow: 3px 3px 10px rgba(33, 133, 220, .5),

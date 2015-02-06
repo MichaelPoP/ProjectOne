@@ -30,6 +30,7 @@ body {
 .fcolor {
 	color:  #2c73b0 !important;
 	text-shadow: 2px 2px 3px #21c2c1, 3px 3px 7px #FFF !important;
+	background: url("../Images/galaxyWindow.png")
 }
 .homeborder {/*CREATES BORDER AROUND HOME TAB*/
 	border:4px outset #8b98ab;
@@ -38,6 +39,7 @@ body {
 	margin-top:5px;
 	
 }
+
 .push {/*THIS IS SO THINGS DONT END UP HIDDEN UNDER NAV*/
 	margin-top: 70px;
 }
@@ -47,13 +49,16 @@ body {
  	}
  }
 /************************** WEB PORTFOLIO ROW ****************************/
-
+.buff-left {
+	margin-left: -42px;
+}
 .web {
-	
-	
+	border-radius: 10px;
+	border: 4px inset rgba(33, 133, 220, .5);
 	padding: 10px;
 }
 .project {
+
 	height: 170px;
 	width: 240px;
 
@@ -82,7 +87,13 @@ body {
 
 /**************************** EDUCATION ROW ****************************/
 .education {
+	border: 4px inset rgba(33, 133, 220, .5);
+	border-radius: 10px;
 	
+}
+.bold {
+	font-weight: 800;
+	font-size: 18px;
 }
 
 .big {
